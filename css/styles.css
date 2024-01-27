@@ -98,8 +98,6 @@ padding-bottom: 24px;
 .page-address-item{
     color: #434455;
 font-size: 16px;
-font-weight: 400;
-line-height: 1.5;
 letter-spacing: 0.02em;
 }
 .page-address-item:hover{
@@ -160,6 +158,17 @@ color: #404BBF;
     margin: -1px;
     border: 0;
     padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.page-advantages-list{
+    display: flex;
+    gap: 24px;
+}
+.page-advantages-list-item{
+    width: calc((100% - 72px) / 4);
 }
 .page-advantages-item{
     color: #2E2F42;
@@ -167,6 +176,7 @@ color: #404BBF;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 .page-advantages-item-text{
     letter-spacing: 0.02em;
@@ -183,16 +193,30 @@ color: #404BBF;
     letter-spacing: 0.02em;
     text-align: center;
     text-transform: capitalize;
+    margin-bottom: 72px;
+}
+.page-team-list{
+    display: flex;
+    gap: 24px;
 }
 .page-team-list-item{
     background-color: #FFFFFF;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+.page-item-container{
+    padding: 32px 0;
 }
 .page-team-list-item-title{
     color: #2E2F42;
+    text-align: center;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    text-transform: capitalize;
+    margin-bottom: 8px;
 }
 .page-team-list-item-text{
     font-size: 16px;
@@ -206,6 +230,22 @@ color: #404BBF;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+}
+.page-portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+.page-portfolio-list-item{
+    width: calc((100% - 48px) / 3);
+}
+.portfolio-page-list-item-container{
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 .page-portfolio-list-item-title{
     color: #2E2F42;
@@ -213,6 +253,7 @@ color: #404BBF;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 .page-portfolio-list-item-text{
     letter-spacing: 0.02em;
@@ -220,6 +261,7 @@ color: #404BBF;
 /* Footer */
 .page-footer{
     background: #2E2F42;
+    padding: 100px 0;
 }
 .logo-studio-footer{
     color: #F4F4FD;
@@ -235,4 +277,5 @@ color: #404BBF;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    max-width: 264px;
 }
