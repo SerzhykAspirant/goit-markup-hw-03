@@ -11,11 +11,17 @@ ul{
     list-style-type: none;
 }
 .container {
-    width: 1158px;
+    width: 100%;
+    max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    outline: 2px solid;
+    outline: 2px solid red;
+}
+/* Header */
+.header {
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 .page-header{
     background: #FFF;
@@ -67,7 +73,14 @@ color: #404BBF;
 .page-address-item:focus{
     color: #404BBF;
 }
+/* Section 1 */
 .page-main {
+    background-color: #2E2F42;
+    padding: 188px 0;
+    margin: 0%;
+    height: 600px;
+}
+.hero-container{
     background: #2E2F42;
 }
 .page-main-title{
@@ -77,6 +90,9 @@ color: #404BBF;
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
+    max-width: 496px;
+    display: block;
+    margin: 0 auto 48px;
 }
 .page-main-button{
     color: #FFFFFF;
@@ -87,6 +103,13 @@ color: #404BBF;
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .page-main-button:hover{
     background-color: #404BBF;
@@ -94,6 +117,7 @@ color: #404BBF;
 .page-main-button:focus{
     background-color: #404BBF;
 }
+/* Section 2 */
 .page-advantages-item{
     color: #2E2F42;
     font-size: 20px;
