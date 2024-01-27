@@ -32,9 +32,7 @@ img {
     margin: 0 auto;
 }
 /* Header */
-.header {
-    padding-top: 24px;
-    padding-bottom: 24px;
+.page-header {
     border-bottom: 1px solid #E7E9FC;
 }
 .container-header{
@@ -221,6 +219,7 @@ color: #404BBF;
 .page-team-list-item-text{
     font-size: 16px;
     letter-spacing: 0.02em;
+    text-align: center;
 }
 /* Section 4 */
 .page-portfolio{
@@ -262,6 +261,10 @@ color: #404BBF;
 .page-footer{
     background: #2E2F42;
     padding: 100px 0;
+}
+.logo-web{
+    display: inline-block;
+    margin-bottom: 16px;
 }
 .logo-studio-footer{
     color: #F4F4FD;
