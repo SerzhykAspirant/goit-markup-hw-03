@@ -1,5 +1,6 @@
 body{
     font-family: "Roboto", sans-serif;
+    font-style: normal;
     color: #434455;
     background-color: #FFFFFF;
     line-height: 1.5;
@@ -9,6 +10,19 @@ a{
 }
 ul{
     list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+h1, h2, h3, p {
+    margin: 0;
+}
+img {
+    display: block;
+}
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    margin: 0%;
 }
 .container {
     width: 100%;
@@ -16,15 +30,24 @@ ul{
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    outline: 2px solid red;
 }
 /* Header */
 .header {
     padding-top: 24px;
     padding-bottom: 24px;
+    border-bottom: 1px solid #E7E9FC;
 }
-.page-header{
-    background: #FFF;
+.container-header{
+    background:  #FFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.page-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 .logo-web {
     color: #4d5ae5;
@@ -34,6 +57,7 @@ ul{
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-right: 76px;
 }
 .logo-studio {
     color: #2E2F42;
@@ -44,12 +68,20 @@ line-height: 1.17;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 }
+.menu-nav{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
 .menu-item {
     color: #2E2F42;
 font-size: 16px;
 font-weight: 500;
 line-height: 1.5;
 letter-spacing: 0.02em;
+display: block;
+padding-top: 24px;
+padding-bottom: 24px;
 }
 .menu-item:hover {
     color:#404BBF;
@@ -59,6 +91,9 @@ letter-spacing: 0.02em;
 }
 .page-address{
     font-style: normal;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
 }
 .page-address-item{
     color: #434455;
@@ -118,6 +153,14 @@ color: #404BBF;
     background-color: #404BBF;
 }
 /* Section 2 */
+.hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+}
 .page-advantages-item{
     color: #2E2F42;
     font-size: 20px;
@@ -128,6 +171,7 @@ color: #404BBF;
 .page-advantages-item-text{
     letter-spacing: 0.02em;
 }
+/* Section 3 */
 .page-team{
     background: #F4F4FD;
 }
@@ -154,6 +198,7 @@ color: #404BBF;
     font-size: 16px;
     letter-spacing: 0.02em;
 }
+/* Section 4 */
 .page-portfolio{
     color: #2E2F42;
     font-size: 36px;
@@ -172,6 +217,7 @@ color: #404BBF;
 .page-portfolio-list-item-text{
     letter-spacing: 0.02em;
 }
+/* Footer */
 .page-footer{
     background: #2E2F42;
 }
